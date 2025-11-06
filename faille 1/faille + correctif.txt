@@ -1,0 +1,27 @@
+1. DESCRIPTION DE LA FAILLE:
+
+Fichier robots.txt exposant des répertoires cachés
+Fichier htpasswd accessible publiquement dans /whatever/
+Hash MD5 faible facilement cassable
+
+Étape 2 : Reconnaissance
+
+Consultation du fichier http://10.74.3.85/robots.txt
+Découverte de deux répertoires interdits : /whatever et /.hidden
+
+Étape 3 : Énumération
+
+Accès au répertoire /whatever/
+Découverte du fichier htpasswd contenant :
+
+  root:437394baff5aa33daa618be47b75cb49
+
+4. RECOMMANDATIONS DE CORRECTION
+
+
+A. Protection du fichier htpasswd
+apache Dans .htaccess ou configuration Apache
+<Files "htpasswd">
+    Order allow,deny
+    Deny from all
+</Files>
