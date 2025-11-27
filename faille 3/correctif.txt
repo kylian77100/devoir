@@ -1,0 +1,9 @@
+La Méthode Idéale : Liste Blanche
+
+C'est la solution la plus sûre. Au lieu de laisser l'utilisateur t'envoyer le chemin complet, tu le forces à choisir dans une liste de noms autorisés.
+
+Tu ne laisses pas l'utilisateur te dire "Où aller", mais "Quoi afficher".
+
+Tu crées une liste figée  de ce que l'utilisateur a le droit de demander (home, about, contact).
+
+Si l'utilisateur envoie ?page=../../etc/passwd, ton code verra que ../../etc/passwd n'est pas dans la liste autorisée et refusera immédiatement l'accès.

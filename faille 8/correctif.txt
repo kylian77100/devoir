@@ -1,0 +1,3 @@
+Désactiver l'Indexation de Répertoire : Empêcher le serveur d'afficher la liste des fichiers et sous-répertoires (comme .hidden/).
+
+Restreindre l'Accès : Interdire l'accès public (via configuration serveur ou .htaccess) aux répertoires contenant des informations sensibles (README, flags, etc.).

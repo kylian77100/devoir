@@ -1,0 +1,7 @@
+1. Protection contre la Falsification de Données 
+Le serveur ne doit jamais se fier à un paramètre dont la valeur est censée être fixe ou critique sans la vérifier.
+
+Action Clé : Déplacer la logique au Serveur.
+
+Si le paramètre (sujet=valeur) est essentiel pour la logique du système (comme un prix, un niveau d'accès, ou le montant d'un achat), la valeur doit être calculée ou vérifiée sur le serveur, et non acceptée telle quelle depuis l'entrée utilisateur.
+

@@ -1,0 +1,11 @@
+1. Sécurité de la Transmission
+
+Utiliser la méthode POST : Changer le formulaire pour envoyer les identifiants via la méthode POST plutôt que GET. Cela masque les identifiants de l'URL et du journal du navigateur/serveur.
+
+Forcer le HTTPS : Chiffrer toutes les communications d'authentification en utilisant HTTPS/SSL/TLS pour empêcher l'interception et la lecture en clair des identifiants .
+
+2. Protection Contre la Force Brute
+ Mettre en place un mécanisme pour limiter le nombre de tentatives de connexion échouées par minute, par adresse IP, compte utilisateur, ou les deux.
+
+Blocage/Verrouillage de Compte : Verrouiller temporairement un compte après un petit nombre (ex: 3 à 5) de tentatives de connexion échouées.
+

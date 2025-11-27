@@ -1,0 +1,8 @@
+Corriger la Faille d'Upload de Fichier
+
+La faille se produit parce que le serveur web ne se fie qu'à une information facilement falsifiable : l'entête Content-Type envoyé par le client.
+
+1. Ne Jamais Se Fonder sur le Content-Type
+
+L'entête Content-Type (comme image/jpeg ou application/x-php) est envoyé par le navigateur et est entièrement contrôlable par un attaquant (comme tu l'as fait avec Burp Suite).
+
