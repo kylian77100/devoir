@@ -1,0 +1,5 @@
+Pour corriger cette faille, il faut cesser de stocker des informations identifiantes (clés/descriptions) dans les cookies de session, utiliser un identifiant de session opaque (sans signification), et privilégier les jetons JWT avec des algorithmes de hachage forts et actuels plutôt que MD5.
+
+--------------------------------------------------------------------------
+
+La faille des cookies de session mal gérés permet à un attaquant de décrypter l'identifiant de session de l'utilisateur en analysant les informations descriptives ou les clés qui y sont stockées, surtout si un hachage faible (comme MD5) est utilisé, ce qui rend le processus de génération de l'identifiant prévisible ou l'identifiant lui-même facilement falsifiable.
