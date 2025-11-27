@@ -5,3 +5,8 @@ Action Clé : Déplacer la logique au Serveur.
 
 Si le paramètre (sujet=valeur) est essentiel pour la logique du système (comme un prix, un niveau d'accès, ou le montant d'un achat), la valeur doit être calculée ou vérifiée sur le serveur, et non acceptée telle quelle depuis l'entrée utilisateur.
 
+
+--------------------------------------
+
+Protection contre la  (Data Tampering)
+Le serveur ne doit jamais faire confiance aux paramètres ou données critiques reçus directement de l'utilisateur sans une validation stricte
