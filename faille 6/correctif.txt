@@ -1,0 +1,8 @@
+Protection contre la Falsification de Requêtes (CSRF)
+La correction principale consiste à implémenter des jetons Anti-CSRF pour toutes les requêtes qui modifient l'état de l'application (POST, PUT, DELETE) :
+
+Ajouter un jeton Anti-CSRF : Intégrez un jeton secret et unique à chaque requête du formulaire ou de l'URL. Ce jeton doit être stocké côté serveur (dans la session de l'utilisateur) et doit être comparé à celui soumis par le client. Si les jetons ne correspondent pas, la requête est rejetée.
+
+--------------
+
+Pour utiliser la faille de CSRF, un attaquant crée une requête malveillante (souvent cachée dans une balise <img> ou un formulaire) et la force à s'exécuter sur le navigateur de la victime déjà connectée à l'application cible, permettant ainsi à la requête de s'exécuter avec les droits de la victime.
