@@ -1,3 +1,9 @@
 Désactiver l'Indexation de Répertoire : Empêcher le serveur d'afficher la liste des fichiers et sous-répertoires (comme .hidden/).
 
+
 Restreindre l'Accès : Interdire l'accès public (via configuration serveur ou .htaccess) aux répertoires contenant des informations sensibles (README, flags, etc.).
+
+
+----------------------
+
+La faille d'Indexation de Répertoire (Directory Indexing) permet à un attaquant de visualiser la liste complète des fichiers et des sous-répertoires (comme .hidden/ dans votre exemple) au lieu d'une page d'erreur ou d'une page web par défaut, ce qui divulgue involontairement l'organisation interne et l'existence de fichiers sensibles sur le serveur.
