@@ -6,3 +6,7 @@ La faille se produit parce que le serveur web ne se fie qu'à une information fa
 
 L'entête Content-Type (comme image/jpeg ou application/x-php) est envoyé par le navigateur et est entièrement contrôlable par un attaquant (comme tu l'as fait avec Burp Suite).
 
+
+-----------------------------------------------
+
+La faille repose sur le fait que le serveur fait confiance uniquement à l'en-tête Content-Type envoyé par le client (qui est facilement modifiable), permettant ainsi à un attaquant de contourner les vérifications et de faire passer un fichier de code malicieux (qui pourrait être renommé .jpg) pour un fichier image légitime, afin qu'il soit exécuté sur le serveur.
