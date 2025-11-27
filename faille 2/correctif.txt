@@ -1,0 +1,7 @@
+
+La faille de Redirection Non Validée (Open Redirect) permet à un attaquant de manipuler le paramètre de destination dans l'URL (comme site=malicious_link) pour rediriger la victime du domaine légitime vers un site malveillant (souvent de phishing), exploitant ainsi la confiance de l'utilisateur dans l'URL de base.
+
+
+--------------------
+
+Pour exploiter la faille de Redirection Non Validée (Open Redirect), vous devez manipuler le paramètre de l'URL qui contrôle la destination de la redirection, en le remplaçant par l'adresse du site malveillant que vous souhaitez utiliser.
