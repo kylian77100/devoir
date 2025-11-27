@@ -9,3 +9,7 @@ Forcer le HTTPS : Chiffrer toutes les communications d'authentification en utili
 
 Blocage/Verrouillage de Compte : Verrouiller temporairement un compte après un petit nombre (ex: 3 à 5) de tentatives de connexion échouées.
 
+
+---------------------------------------------------
+
+La faille de la Sécurité de la Transmission permet à un attaquant d'intercepter et de lire les identifiants en clair soit parce que la méthode GET expose le mot de passe dans l'URL ou les logs, soit parce que l'absence de HTTPS laisse les données non chiffrées lors de leur transmission sur le réseau. La faille de la Protection Contre la Force Brute permet à un attaquant de tenter un nombre illimité d'identifiants et de mots de passe sans restriction, garantissant qu'il finira par deviner le bon identifiant par simple énumération.
